@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/config/AutoSave</li>
 
+<li>$:/config/DownloadSaver/AutoSave</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh</li>
@@ -161,11 +163,15 @@ Error message and password prompt
 
 <li>$:/DefaultTiddlers</li>
 
+<li>$:/GitHub/Branch</li>
+
 <li>$:/GitHub/Filename</li>
 
 <li>$:/GitHub/Path</li>
 
 <li>$:/GitHub/Repo</li>
+
+<li>$:/GitHub/ServerURL</li>
 
 <li>$:/GitHub/Username</li>
 
@@ -203,6 +209,10 @@ Error message and password prompt
 
 <li>$:/state/tab/sidebar--595412856</li>
 
+<li>$:/state/toc/TableOfContents-Cooking--118161433</li>
+
+<li>$:/state/toc/TableOfContents-Cooking-497309061</li>
+
 <li>$:/state/toc/TableOfContents-Courses-497309061</li>
 
 <li>$:/state/toc/TableOfContents-Programming--1235639821</li>
@@ -212,6 +222,8 @@ Error message and password prompt
 <li>$:/state/toc/TableOfContents-TiddlyWiki--1235639821</li>
 
 <li>$:/state/toc/TableOfContents-TiddlyWiki-497309061</li>
+
+<li>$:/state/toc/TableOfContents/Cooking-Recipes-497309061</li>
 
 <li>$:/StoryList</li>
 
@@ -453,13 +465,15 @@ Error message and password prompt
 
 <li>Development Environment</li>
 
-<li>Dutch oven</li>
+<li>Dutch Oven</li>
 
 <li>Linking and Loading</li>
 
 <li>Programming</li>
 
 <li>Programming Languages</li>
+
+<li>Recipes</li>
 
 <li>Security</li>
 
@@ -470,6 +484,8 @@ Error message and password prompt
 <li>TiddlyWiki</li>
 
 <li>Untitled</li>
+
+<li>照烧鸡胸</li>
 
 </ul>
 </p>
@@ -496,6 +512,9 @@ Error message and password prompt
 <div created="20200330014925357" modified="20200330014925357" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
+<div created="20200509063152491" modified="20200509063200556" title="$:/config/DownloadSaver/AutoSave">
+<pre>no</pre>
+</div>
 <div created="20200331003957961" modified="20200331003957961" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
 <pre>show</pre>
 </div>
@@ -511,8 +530,11 @@ Error message and password prompt
 <div created="20200331003525339" modified="20200331003525339" title="$:/config/Whitespace/Spacious">
 <pre>no</pre>
 </div>
-<div encrypted="{&quot;iv&quot;:&quot;LVQd7IOIgmf9HwG3jBlDiQ==&quot;,&quot;v&quot;:1,&quot;iter&quot;:10000,&quot;ks&quot;:128,&quot;ts&quot;:64,&quot;mode&quot;:&quot;ccm&quot;,&quot;adata&quot;:&quot;&quot;,&quot;cipher&quot;:&quot;aes&quot;,&quot;salt&quot;:&quot;sKoi2Qmf7MI=&quot;,&quot;ct&quot;:&quot;uGKGEYTVEQybQq8MpA8Pw5q8igpRTh+6ChB+5DKTppv5Ny/BJNCv5LNVtFLlI3D3YKioQnBMn4vZC9HePSrcUW0/HAfrRpZfml4ulN1yl8+vsWQQmFXBC8mEyM52kz/YAytHTOkZp6EuNiY/uKbbraQ5/58BF6Yeq2zPgCpugQzWZI2HUzbRUR9PkihVpreS/DC2sRCkvhIkZwsC9qnIWTfEP+unPpI4gsHzMJhS+GVrjsgJmYAp1x4PXA5yE4vsRouzv5cdomTEV7ALd5FXb9VeMag4OcKz8cJ3j++xh1O4rQdMhpsbijXmBntSZ8PQkxE8S1iZwXHTNuUGYfLNpjr9pNowkIbagnZkDlOv9IDXgnODK8r4m153&quot;}" modified="20200414221324699" title="$:/ControlPanel">
-<pre>!This is an encrypted Tiddler</pre>
+<div color="#bbb" icon="$:/core/images/options-button" modified="20200414221324699" title="$:/ControlPanel">
+<pre>&lt;div class=&quot;tc-control-panel&quot;&gt;
+&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/ControlPanel]!has[draft.of]]&quot; &quot;$:/core/ui/ControlPanel/Info&quot;&gt;&gt;
+&lt;/div&gt;
+</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.21">
 <pre>{
@@ -9710,17 +9732,23 @@ Error message and password prompt
 <div created="20200330235944759" modified="20200330235953136" title="$:/DefaultTiddlers">
 <pre>TableOfContents</pre>
 </div>
-<div created="20200330012342593" modified="20200330012344444" title="$:/GitHub/Filename">
-<pre>index.html</pre>
+<div created="20200509063237815" modified="20200509063237815" title="$:/GitHub/Branch">
+<pre></pre>
 </div>
-<div created="20200330012341256" modified="20200330012341256" title="$:/GitHub/Path">
-<pre>/</pre>
+<div created="20200330012342593" modified="20200509063242355" title="$:/GitHub/Filename">
+<pre></pre>
 </div>
-<div created="20200330012336355" modified="20200330012340042" title="$:/GitHub/Repo">
-<pre>wikiofgyh/wiki</pre>
+<div created="20200330012341256" modified="20200509063241280" title="$:/GitHub/Path">
+<pre></pre>
 </div>
-<div created="20200330012103611" modified="20200330012104673" title="$:/GitHub/Username">
-<pre>wikiofgyh</pre>
+<div created="20200330012336355" modified="20200509063239618" title="$:/GitHub/Repo">
+<pre></pre>
+</div>
+<div created="20200509063246355" modified="20200509063246355" title="$:/GitHub/ServerURL">
+<pre></pre>
+</div>
+<div created="20200330012103611" modified="20200509063232671" title="$:/GitHub/Username">
+<pre></pre>
 </div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
@@ -10092,13 +10120,13 @@ Error message and password prompt
 <div created="20200330012043685" modified="20200330234917510" title="$:/SiteTitle">
 <pre>Gyh's Personal Wiki</pre>
 </div>
-<div created="20200405043940292" modified="20200509062007932" title="$:/state/encrypt">
+<div created="20200405043940292" modified="20200509063056635" title="$:/state/encrypt">
 <pre></pre>
 </div>
 <div created="20200401031032353" modified="20200401031036779" title="$:/state/Link/--383692752/search">
 <pre></pre>
 </div>
-<div created="20200331000340910" modified="20200331003446602" title="$:/state/sidebar">
+<div created="20200331000340910" modified="20200509063225430" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200331000305620" modified="20200509061942029" title="$:/state/tab--1963855381">
@@ -10110,14 +10138,20 @@ Error message and password prompt
 <div created="20200330015705327" modified="20200330015711697" title="$:/state/tab-1497764994">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
 </div>
-<div created="20200330012059679" modified="20200509061858623" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20200330012059679" modified="20200509063252271" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200330012101961" modified="20200509061855553" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/DownloadSaver</pre>
+<div created="20200330012101961" modified="20200509063255354" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
-<div created="20200330013715486" modified="20200331000224079" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20200330013715486" modified="20200509063650150" title="$:/state/tab/sidebar--595412856">
+<pre>TableOfContents</pre>
+</div>
+<div created="20200509063653285" modified="20200509063658799" title="$:/state/toc/TableOfContents-Cooking--118161433">
+<pre>close</pre>
+</div>
+<div created="20200509062804333" modified="20200509063524040" title="$:/state/toc/TableOfContents-Cooking-497309061">
+<pre>open</pre>
 </div>
 <div created="20200403045949194" modified="20200403045949194" title="$:/state/toc/TableOfContents-Courses-497309061">
 <pre>open</pre>
@@ -10134,7 +10168,10 @@ Error message and password prompt
 <div created="20200401025744505" modified="20200405044534624" title="$:/state/toc/TableOfContents-TiddlyWiki-497309061">
 <pre>close</pre>
 </div>
-<div created="20200509061845679" list="$:/ControlPanel TableOfContents" modified="20200509061845679" title="$:/StoryList">
+<div created="20200509063325576" modified="20200509063459166" title="$:/state/toc/TableOfContents/Cooking-Recipes-497309061">
+<pre>close</pre>
+</div>
+<div created="20200509063328174" list="TableOfContents 照烧鸡胸 [[Dutch Oven]] Cooking" modified="20200509063727963" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200331002127914" list="$:/core/ui/SideBar/Open $:/core/ui/SideBar/Recent $:/core/ui/SideBar/Tools $:/core/ui/SideBar/More" modified="20200331002127914" title="$:/tags/SideBar">
@@ -10159,19 +10196,19 @@ Error message and password prompt
         },
         &quot;$:/info/url/full&quot;: {
             &quot;title&quot;: &quot;$:/info/url/full&quot;,
-            &quot;text&quot;: &quot;https://wiki.0x7cc.life/&quot;
+            &quot;text&quot;: &quot;file:///Users/gyh/Downloads/index.html&quot;
         },
         &quot;$:/info/url/host&quot;: {
             &quot;title&quot;: &quot;$:/info/url/host&quot;,
-            &quot;text&quot;: &quot;wiki.0x7cc.life&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/hostname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/hostname&quot;,
-            &quot;text&quot;: &quot;wiki.0x7cc.life&quot;
+            &quot;text&quot;: &quot;&quot;
         },
         &quot;$:/info/url/protocol&quot;: {
             &quot;title&quot;: &quot;$:/info/url/protocol&quot;,
-            &quot;text&quot;: &quot;https:&quot;
+            &quot;text&quot;: &quot;file:&quot;
         },
         &quot;$:/info/url/port&quot;: {
             &quot;title&quot;: &quot;$:/info/url/port&quot;,
@@ -10179,7 +10216,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/pathname&quot;: {
             &quot;title&quot;: &quot;$:/info/url/pathname&quot;,
-            &quot;text&quot;: &quot;/&quot;
+            &quot;text&quot;: &quot;/Users/gyh/Downloads/index.html&quot;
         },
         &quot;$:/info/url/search&quot;: {
             &quot;title&quot;: &quot;$:/info/url/search&quot;,
@@ -10187,7 +10224,7 @@ Error message and password prompt
         },
         &quot;$:/info/url/origin&quot;: {
             &quot;title&quot;: &quot;$:/info/url/origin&quot;,
-            &quot;text&quot;: &quot;https://wiki.0x7cc.life&quot;
+            &quot;text&quot;: &quot;file://&quot;
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
@@ -10204,7 +10241,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200405043949889" modified="20200509062007079" title="$:/temp/password">
+<div created="20200405043949889" modified="20200509063055570" title="$:/temp/password">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20200331002943591" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20200331002943591" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.21">
@@ -11160,7 +11197,7 @@ co for matrix transpose: https://web.archive.org/web/20200502031844/http://wgrop
 
 &lt;a href=&quot;https://web.archive.org/web/20200410053732/http://www.skyfree.org/linux/references/ELF_Format.pdf&quot;&gt; ELF format&lt;/a&gt;</pre>
 </div>
-<div created="20200427070407382" modified="20200427070501651" tags="TableOfContents" title="Cooking">
+<div created="20200427070407382" modified="20200509063742521" tags="TableOfContents" title="Cooking">
 <pre>&lt;&lt;list-links &quot;[tag[Cooking]]&quot;&gt;&gt;</pre>
 </div>
 <div created="20200401025607316" modified="20200401030058376" tags="TableOfContents" title="Courses">
@@ -11226,7 +11263,7 @@ How to setup ctags with gutentags properly for almost every language
 
 </pre>
 </div>
-<div created="20200427070508820" modified="20200427070539284" tags="Cooking" title="Dutch oven">
+<div created="20200427070508820" modified="20200509063445707" tags="Cooking" title="Dutch Oven">
 <pre>https://www.dealmoon.com/guide/774401</pre>
 </div>
 <div created="20200421040606187" encrypted="{&quot;iv&quot;:&quot;MFikEC1dNvdL3HeuoNn7vQ==&quot;,&quot;v&quot;:1,&quot;iter&quot;:10000,&quot;ks&quot;:128,&quot;ts&quot;:64,&quot;mode&quot;:&quot;ccm&quot;,&quot;adata&quot;:&quot;&quot;,&quot;cipher&quot;:&quot;aes&quot;,&quot;salt&quot;:&quot;Jh1jTE5Uvpc=&quot;,&quot;ct&quot;:&quot;q9FqXcx5pEvfBJlEe4VN+Lo/zmBUTrBRmyVoQetYABXjZFTtn+5g3Bpi1NGbTuUU8m3sXyA7tLq+0Q+qVJNYCYAdu3ni7tlcZl+32w5DKQ5Xosg827y3xM6ifNln16o87zJ8c7jd3Lh67cJKZCqzxImXTE3PrKbIvOCspqtYEUKsC8LwvXbdCofjvDSuCWapjFAuIfKpLLJATKHGfAYgzS0s+rV49uRPX5CAgrubhzcTyWpwdkkPRVAkHrd6Xxay0MTKu0XINM2VRIHS1530i5h9PiAzmizak56iRinCpN4/t6CW&quot;}" modified="20200421040726726" tags="Programming" title="Linking and Loading">
@@ -11242,10 +11279,13 @@ Learning Books: https://stackoverflow.com/questions/562303/the-definitive-c-book
 ANSI C: https://en.wikipedia.org/wiki/ANSI_C
 </pre>
 </div>
+<div created="20200509062854598" modified="20200509062910056" tags="Cooking" title="Recipes">
+<pre>&lt;&lt;list-links &quot;[tag[Recipes]]&quot;&gt;&gt;</pre>
+</div>
 <div created="20200402081123473" modified="20200403080651585" tags="Programming" title="Security">
 <pre>use CA to ssh: https://news.ycombinator.com/item?id=22750850</pre>
 </div>
-<div caption="Contents" created="20200330013913064" list-after="$:/core/ui/SideBar/Open" modified="20200331002127914" tags="$:/tags/SideBar" title="TableOfContents">
+<div caption="Contents" created="20200330013913064" list-after="$:/core/ui/SideBar/Open" modified="20200509063533028" tags="$:/tags/SideBar" title="TableOfContents">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
 &lt;&lt;toc-selective-expandable 'TableOfContents'&gt;&gt;
@@ -11274,6 +11314,22 @@ why hyper-threading only enable two logical cores?
 </div>
 <div title="Untitled">
 <pre>http://danielorodriguez.com/TW5-EncryptTiddlerPlugin/#%24%3a%2fplugins%2fdanielo%2fencryptTiddler</pre>
+</div>
+<div created="20200509062911498" modified="20200509063733711" tags="Recipes" title="照烧鸡胸">
+<pre>食材：鸡胸一块、老抽1勺、料酒1勺、蜂蜜1勺、生抽2勺、黑胡椒粉适量、食用油适量、盐少许
+
+ 
+做法：
+
+1.用刀在鸡胸上划十字，等下方便入味
+
+2. 倒入盐、料酒到干净容器中，腌制鸡胸肉20分钟，蜂蜜、生抽、老抽、黑胡椒粉调成酱料
+
+3.锅内倒入适量油，放入鸡胸肉，中小火先煎有刀痕的那一面一分钟，再翻面煎另外一面
+
+4.倒入酱料，调中火，用锅铲用力按压一下有刀痕的那面，现在这面就变成焦糖色了
+
+https://www.dealmoon.com/post/579925?ck=44e774add1fab544cb4f6aa4f11bc944</pre>
 </div>
 
 </div>
